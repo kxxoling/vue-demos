@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import Index from './views/Index'
+
 import Editor from './components/Markdown'
 import Github from './components/Github'
 import ModalController from './components/ModalController'
@@ -16,6 +18,10 @@ Vue.use(VueRouter)
 var router = new VueRouter()
 
 router.map({
+  '/': {
+    name: 'index',
+    component: Index
+  },
   '/github/': {
     name: 'github',
     component: Github
