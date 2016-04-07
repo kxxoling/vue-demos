@@ -1,5 +1,5 @@
 <template>
-  <div id="demo">
+  <div id="github-demo">
     <h1>Latest Vue.js Commits</h1>
     <div v-for="branch in branches">
       <input type="radio" name="branch" :id="branch" :value="branch" v-model="currentBranch">
@@ -60,19 +60,17 @@ export default {
 }
 </script>
 
-<style>
-#demo {
-  font-family: 'Helvetica', Arial, sans-serif;
-}
-a {
-  text-decoration: none;
-  color: #f66;
-}
-li {
-  line-height: 1.5em;
-  margin-bottom: 20px;
-}
-.author, .date {
-  font-weight: bold;
-}
+<style lang="styl">
+#github-demo
+  font-family 'Helvetica', Arial, sans-serif
+  a
+    text-decoration none
+    color #f66
+
+  li
+    line-height 1.5em
+    margin-bottom 20px
+
+  .author, .date
+    font-weight bold
 </style>
