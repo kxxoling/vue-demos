@@ -35,7 +35,7 @@ export default {
         name: 'ElasticHeader'
       }, {
         urlName: 'widgets',
-        name: 'WidgetsView'
+        name: 'Widgets'
       }, {
         urlName: 'todos',
         name: 'Todos'
