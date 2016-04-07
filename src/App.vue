@@ -49,6 +49,9 @@ export default {
 </script>
 
 <style lang="styl">
+span, input
+  outline none
+
 .fade-transition
   transition: opacity .3s ease
 

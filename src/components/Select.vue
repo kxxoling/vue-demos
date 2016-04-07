@@ -1,12 +1,9 @@
 <template lang="jade">
-  input.select-menu(v-model="value")
+  .select-menu(v-model="value")
 </template>
 
 <script>
-require('jquery')
-require('select2')
-
-var $ = window.$
+const $ = window.$
 
 export default {
   data () {
@@ -22,9 +19,9 @@ export default {
   ready () {
     var self = this
     $(self.$el).select2({
-      data: this.params.options
+      data: this.options
     }).on('change', function () {
-      self.set(this.value)
+      self.$set(this.value)
     })
   },
   watch: {
@@ -37,3 +34,7 @@ export default {
   }
 }
 </script>
+
+<style lang="styl">
+@import '~/node_modules/select2/dist/css/select2.min.css';
+</style>
