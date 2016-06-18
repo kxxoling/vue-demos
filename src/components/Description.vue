@@ -53,15 +53,18 @@ export default {
 }
 </script>
 
-<style lang="styl">
+<style lang="stylus">
 $green = #579979
 $grey = #999
+$white = white
 
 .description
   width 700px
   height 140px
   margin-left auto
   margin-right auto
+  padding 60px
+  background $white
 
   h2
     font-size 40px

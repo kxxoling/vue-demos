@@ -151,6 +151,9 @@ pre
     margin 1.8em 0 1em
     font-size 1.2em
 
+.demo
+  margin-left 80px
+  margin-right 80px
 
 @media (max-width: 1200px)
   #main

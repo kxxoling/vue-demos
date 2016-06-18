@@ -73,6 +73,9 @@ export default {
   position: absolute;
   right: 0;
   top: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 16px;
 }
 
 /*

@@ -1,8 +1,7 @@
-<template>
-  <div class="modal-controller">
-    <modal :show.sync="show" msg="This is message body!"></modal>
-    <button v-on:click="show=true">show modal</button>
-  </div>
+<template lang="jade">
+.modal-controller
+  modal(:show.sync="show", msg="This is message body!")
+  button.show-modal(v-on:click="show=true" type="button") click to show modal
 </template>
 
 <script>
@@ -19,3 +18,8 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+.show-modal
+  cursor pointer
+</style>
