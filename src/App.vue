@@ -28,6 +28,9 @@ export default {
         urlName: 'github',
         name: 'GitHub'
       }, {
+        urlName: 'explorer',
+        name: 'GitHub FileExplorer'
+      }, {
         urlName: 'modal',
         name: 'Modal'
       }, {
