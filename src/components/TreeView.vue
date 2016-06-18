@@ -40,8 +40,10 @@ var data = {
 }
 
 export default {
-  data: {
-    treeData: data
+  data () {
+    return {
+      treeData: data
+    }
   },
   components: {
     Item
